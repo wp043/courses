@@ -1,5 +1,5 @@
 # Missing Semester
-## The Shell - textual interface - old school (focus on bash)
+## Overview and the Shell - textual interface - old school (focus on bash)
 <ins>Using the shell</ins>
 
 * ```missing:-$``` tells you are on the machine ```missing``` and that your current working directory is ```~``` (short for home). The ```$``` tells you that you are not the root user.
@@ -80,6 +80,16 @@
 ![Alt text](./pics/shell_exercise4.png)
 ![Alt text](./pics/shell_exercise5.png) write the "last modified" dat output by ```semester``` into a file called ```last-modified.txt``` in home directory.
 ![Alt text](./pics/shell_exercise6.png) write a command that reads out your laptop battery's power level or your desktop machine's CPU temperature from ```/sys```. To check CPU's temperature (not on my system), ```cat /sys/class/thermal/thermal_zone0/temp```.
+## Shell Tools and Scripting
+<ins>Shell Scripting - bash focus</ins>
+
+* Most shells have their own scripting language with variables, control flow, and its own syntax. Optimized for performing shell-related tasks.
+    * Creating command pipelines, saving results into files, and reading from standard input are prirmitives in shell scripting.
+* Assign variables: ```foo=bar``` and access the value of the variable with ```$foo```.
+    * ```foo = bar``` won't work because it is interpreted as calling the ```foo``` program with arguments ```=``` and ```bar```.
+    * Strings delimlited with ```' '``` are literal strings and will not substitute variable values whereas ```" "``` delimited strings.
+    * ```echo "$foo"``` prints bar whereas ```echo '$foo'``` prints ```$foo```.
+
 ## Editors (Vim)
 ## Data Wrangling
 ## Command-line Environment
